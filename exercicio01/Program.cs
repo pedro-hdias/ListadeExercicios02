@@ -11,7 +11,7 @@ namespace exercicio01
             Console.WriteLine("Vou contar quantas pessoas tem mais de 18 anos. Insira 10 idades.");
             do
             {
-                Console.WriteLine("Digite a idade:");
+                Console.WriteLine($"Digite a {contador}ª idade:");
                 int idade = Convert.ToInt32(Console.ReadLine());
                 if (idade >= 18)
                 {
@@ -19,9 +19,7 @@ namespace exercicio01
                     contador++;
                 }
                 else
-                {
                     contador++;
-                }
             } while (contador <= 10);
             Console.WriteLine($"Existem {maior18} pessoas que tem as idades acima dos 18 anos.");
         }
